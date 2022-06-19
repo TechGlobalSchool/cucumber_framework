@@ -9,8 +9,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "steps",
-        tags = "@Google",
-        dryRun = false
+        tags = "@Regression",
+        dryRun = false,
+        monochrome = false
 )
 
 public class Runner {
