@@ -1,6 +1,6 @@
+@Regression
 Feature: Wiki Search Functionality
 
-  @Wiki
   Scenario Outline: Validate Wiki search
     Given user navigates to "https://www.wikipedia.org/"
     When user searches for "<key>" on Wikipedia
@@ -9,15 +9,15 @@ Feature: Wiki Search Functionality
     And user should see "<key>" in the first heading
     Examples:
       | key              |
-      | Elon Musk        |
-      | Bill Gates       |
-      | Johnny Depp      |
+      #| Elon Musk        |
+      #| Bill Gates       |
+      #| Johnny Depp      |
       #| Post Malone      |
       #| Jack Harlow      |
       #| Lil Baby         |
       | bob the builder  |
       | Jennifer Lopez   |
-      | Robert downey jr |
+      #| Robert downey jr |
       #| Irina Shayk      |
       #| Kobe Bryant      |
       #| Piero Manzoni    |
